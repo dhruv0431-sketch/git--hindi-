@@ -9,10 +9,20 @@
 # x=factorial(12) 
 # print(x)
 # 
+#  
+# l 
+# lst= eval(input("enter the list: "))
+# print(type(lst)) 
+# wap to take a list increase even no by 5 and decrease odd no by 5 
+
+# Program to modify a number based on odd/even condition
+
 # 
-list1=[1,2,3,4,5,6,7,8,9]
-list2=[1,2,3,4,5,6,7,8, 9]
-for i in list1:
-    for j in list2:
-        if i==j:
-            print(i,end=" ")
+lst= eval(input("enter the list: "))
+print(lst)
+for i in range(len(lst)):
+    if lst[i] % 2 == 0:  # Check if the number is even
+        lst[i] += 5       # Increase even number by 5
+    else:
+        lst[i] -= 5       # Decrease odd number by 5
+print(lst)
